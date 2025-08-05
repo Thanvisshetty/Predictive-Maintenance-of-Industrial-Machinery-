@@ -8,49 +8,39 @@ The proposed system aims to predict the Failure Type of industrial machinery usi
 
 Key steps:
 
-Data Collection: Use sensor data including temperature, rotational speed, torque, and tool wear.
+1.Data Collection: Use sensor data including temperature, rotational speed, torque, and tool wear.
 
-Data Preprocessing: Handle missing values, normalize input features, and encode categorical variables.
+2.Data Preprocessing: Handle missing values, normalize input features, and encode categorical variables.
 
-Model Building: Train and evaluate multiple machine learning pipelines.
+3.Model Building: Train and evaluate multiple machine learning pipelines.
 
-Optimization: Use cross-validation and hyperparameter tuning to optimize model accuracy.
+4.Optimization: Use cross-validation and hyperparameter tuning to optimize model accuracy.
 
-Deployment: Deploy the best-performing model via IBM Watsonx for real-time prediction.
+5.Deployment: Deploy the best-performing model via IBM Watsonx for real-time prediction.
 
 
 
 🧠 System Development Approach
-Platform Used: IBM Watsonx.ai Studio
 
-Data Split: 90% training and 10% holdout data
+1.Platform Used: IBM Watsonx.ai Studio
 
-Approach: AutoAI pipeline generation and evaluation
+2.Data Split: 90% training and 10% holdout data
 
-Model Selection: Snap Random Forest Classifier & Snap Decision Tree Classifier
+3.Approach: AutoAI pipeline generation and evaluation
+
+4.Model Selection: Snap Random Forest Classifier & Snap Decision Tree Classifier
 
 
 
 ⚙️ Algorithm & Deployment
-Algorithm Selection:
 
-Random Forest & Decision Tree Classifiers
+1.Algorithm Selection: Random Forest & Decision Tree Classifiers
 
-Best model: Batched Tree Ensemble Classifier with accuracy: 0.995
+2.Best model: Batched Tree Ensemble Classifier with accuracy: 0.995
 
-Training Process:
+3.Training Process: IBM AutoAI generated 9 pipelines Hyperparameter optimization and feature engineering applied
 
-IBM AutoAI generated 9 pipelines
-
-Hyperparameter optimization and feature engineering applied
-
-Deployment:
-
-Best pipeline (Pipeline 5) deployed
-
-Real-time prediction enabled via Watsonx's API interface
-
-
+4.Deployment:Best pipeline (Pipeline 5) deployed Real-time prediction enabled via Watsonx's API interface
 
 📊 Result
 Model used: Pipeline 5 – Batched Tree Ensemble Classifier
@@ -58,9 +48,6 @@ Model used: Pipeline 5 – Batched Tree Ensemble Classifier
 Accuracy: 99.5% (Cross-validation)
 
 Output: Multiclass classification — Predicts "Failure Type" with 100% confidence
-
-
-
 
 🧾 Conclusion
 The project successfully implemented a machine learning solution to predict machinery failures with high accuracy using Watsonx.ai. The system helps reduce downtime and improve production efficiency by enabling preventive maintenance actions.
